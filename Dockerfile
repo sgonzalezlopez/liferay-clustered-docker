@@ -19,7 +19,6 @@ RUN cd /tmp \
 && mv /tmp/Elasticray.lpkg /opt/liferay/deploy/Elasticray.lpkg \
 #&& curl --digest -x ${http_proxy} --user ${REPO_USER}:${REPO_PASS} -LO  http://filerepo.osappext.pink.eu-central-1.aws.openpaas.axa-cloud.com/liferay-docker/activation-key-nonproduction-6.2ee.xml \
 #&& mv /tmp/activation-key-nonproduction-6.2ee.xml /opt/liferay/deploy/license-portaldevelopment-developer-6.2ee-axa.xml \
-&& rm /opt/liferay/deploy/license-portaldevelopment-developer-6.2ee-axa.xml \
 && curl --digest -x ${http_proxy} --user ${REPO_USER}:${REPO_PASS} -LO  http://filerepo.osappext.pink.eu-central-1.aws.openpaas.axa-cloud.com/liferay-docker/lcs-portlet.war \
 && mv /tmp/lcs-portlet.war /opt/liferay/deploy/lcs-portlet.war \
 && chmod 777 /opt/liferay/deploy/* \
