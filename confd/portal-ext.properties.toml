@@ -1,6 +1,6 @@
 [template]
 src = "portal-ext.properties.tmpl"
-dest = "/opt/liferay/tomcat-7.0.42/webapps/ROOT/WEB-INF/classes/portal-ext.properties"
+dest = "/opt/liferay/tomcat/webapps/ROOT/WEB-INF/classes/portal-ext.properties"
 keys = [
 	"LIFERAY_ELASTICSEARCH_SERVICE_HOST",
 	"LIFERAY_ELASTICSEARCH_SERVICE_PORT",
