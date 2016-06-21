@@ -7,8 +7,8 @@ keys = [
 	"DB_USERNAME",
 	"DB_PASSWORD",
 	"DL_DIR",
-	"/liferay/___cluster_name___/clusterlink/autodetect",
-	"/liferay/___cluster_name___/clusterlink/config",
+	"LIFERAY_MYSQL_SERVICE_HOST",
+	"LIFERAY_MYSQL_SERVICE_PORT",
 ]
 owner = "root"
 mode = "0644"
