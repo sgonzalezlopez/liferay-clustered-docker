@@ -1,4 +1,4 @@
-FROM liferay_test
+FROM liferay_test:lcs
 
 MAINTAINER AXA MedLA
 
