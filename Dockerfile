@@ -18,7 +18,7 @@ RUN cd /tmp \
 && curl --digest -x ${http_proxy} --user ${REPO_USER}:${REPO_PASS} -LO  http://filerepo.osappext.pink.eu-central-1.aws.openpaas.axa-cloud.com/liferay-docker/Elasticray.lpkg \
 && mv /tmp/Elasticray.lpkg /opt/liferay/deploy/Elasticray.lpkg \
 && curl --digest -x ${http_proxy} --user ${REPO_USER}:${REPO_PASS} -LO  http://filerepo.osappext.pink.eu-central-1.aws.openpaas.axa-cloud.com/liferay-docker/license6.2ee.xml \
-&& mv /tmp/license-portalnonproduction-production-6.2ee-axaargelia-entornoqa.xml /opt/liferay/deploy/license6.2ee.xml \
+&& mv /tmp/license6.2ee.xml /opt/liferay/deploy/license6.2ee.xml \
 && chmod 777 /opt/liferay/deploy/* \
 && mkdir /opt/liferay/cluster-config \
 && chmod 777 /opt/liferay/cluster-config
