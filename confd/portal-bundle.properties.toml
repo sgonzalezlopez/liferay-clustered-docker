@@ -1,0 +1,14 @@
+[template]
+src = "portal-bundle.properties.tmpl"
+dest = "/opt/liferay/portal-bundle.properties"
+keys = [
+	"DB_DRIVER",
+	"DB_URL",
+	"DB_USERNAME",
+	"DB_PASSWORD",
+	"DL_DIR",
+	"/liferay/___cluster_name___/clusterlink/autodetect",
+	"/liferay/___cluster_name___/clusterlink/config",
+]
+owner = "root"
+mode = "0644"
