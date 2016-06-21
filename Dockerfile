@@ -2,12 +2,15 @@ FROM liferay_test
 
 MAINTAINER AXA MedLA
 
+USER 0
+
 ADD /confd/portal-bundle.properties.tmpl /etc/confd/templates/
 ADD /confd/portal-bundle.properties.toml /etc/confd/conf.d/
 ADD /confd/cluster-config.xml.tmpl /etc/confd/templates/
 ADD /confd/cluster-config.xml.toml /etc/confd/conf.d/
 ADD /confd/portal-ext.properties.tmpl /etc/confd/templates/
 ADD /confd/portal-ext.properties.toml /etc/confd/conf.d/
+
 
 RUN cd /tmp \
 && curl --digest -x ${http_proxy} --user ${REPO_USER}:${REPO_PASS} -LO http://filerepo.osappext.pink.eu-central-1.aws.openpaas.axa-cloud.com/liferay-docker/mysql-connector-java-5.1.23.jar \
