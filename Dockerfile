@@ -14,7 +14,7 @@ ADD /confd/portal-ext.properties.toml /etc/confd/conf.d/
 
 RUN cd /tmp \
 && curl --digest -x ${http_proxy} --user ${REPO_USER}:${REPO_PASS} -LO http://filerepo.osappext.pink.eu-central-1.aws.openpaas.axa-cloud.com/liferay-docker/mysql-connector-java-5.1.23.jar \
-&& mv /tmp/mysql-connector-java-5.1.23.jar /opt/liferay/tomcat-7.0.42/lib/ext/mysql-connector-java-5.1.23.jar \
+&& mv /tmp/mysql-connector-java-5.1.23.jar /opt/liferay/tomcat/lib/ext/mysql-connector-java-5.1.23.jar \
 && curl --digest -x ${http_proxy} --user ${REPO_USER}:${REPO_PASS} -LO  http://filerepo.osappext.pink.eu-central-1.aws.openpaas.axa-cloud.com/liferay-docker/Elasticray.lpkg \
 && mv /tmp/Elasticray.lpkg /opt/liferay/deploy/Elasticray.lpkg \
 #&& curl --digest -x ${http_proxy} --user ${REPO_USER}:${REPO_PASS} -LO  http://filerepo.osappext.pink.eu-central-1.aws.openpaas.axa-cloud.com/liferay-docker/activation-key-nonproduction-6.2ee.xml \
