@@ -49,7 +49,7 @@ cluster.link.enabled=true
 # It can be any address that can be accessed by all nodes. 
 # The safest approach is to use the database one as it has to be accessible by all nodes anyway
 #
-cluster.link.autodetect.address={{getv "LIFERAY_MYSQL_SERVICE_HOST"}}:{{getv "LIFERAY_MYSQL_SERVICE_PORT"}}
+cluster.link.autodetect.address={{getenv  "LIFERAY_MYSQL_SERVICE_HOST"}}:{{getenv  "LIFERAY_MYSQL_SERVICE_PORT"}}
 
 
 #
