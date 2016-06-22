@@ -21,7 +21,10 @@ RUN cd /tmp \
 #&& mv /tmp/activation-key-nonproduction-6.2ee.xml /opt/liferay/deploy/license-portaldevelopment-developer-6.2ee-axa.xml \
 && curl --digest -x ${http_proxy} --user ${REPO_USER}:${REPO_PASS} -LO  http://filerepo.osappext.pink.eu-central-1.aws.openpaas.axa-cloud.com/liferay-docker/lcs-portlet.war \
 && mv /tmp/lcs-portlet.war /opt/liferay/deploy/lcs-portlet.war \
+&& curl --digest -x ${http_proxy} --user ${REPO_USER}:${REPO_PASS} -LO  http://filerepo.osappext.pink.eu-central-1.aws.openpaas.axa-cloud.com/liferay-docker/lcs-aatf-1613083.aatf \
+&& mv /tmp/lcs-aatf-1613083.aatf /opt/liferay/data/lcs-aatf-1613083.aatf \
 && chmod 777 /opt/liferay/deploy/* \
+&& chmod 777 /opt/liferay/data/lcs-aatf-1613083.aatf \
 && mkdir /opt/liferay/cluster-config \
 && chmod 777 /opt/liferay/cluster-config
 
